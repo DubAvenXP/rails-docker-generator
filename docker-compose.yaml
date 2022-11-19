@@ -1,6 +1,3 @@
-# docker-compose run --no-deps app rails new . --force --database=postgresql
-# docker-compose build
-# docker-compose up -d
 version: "3.8"
 services:
     database:

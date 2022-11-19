@@ -1,6 +1,6 @@
 # Rails projects generator using Docker
 
-This is a simple script to generate a Rails project using Docker.
+This is a simple way to generate a Rails project using Docker.
 
 ## Requirements
 
@@ -27,6 +27,12 @@ $ docker-compose run web rake db:create
 ```bash
 $ docker-compose run web rake db:migrate
 ```
+
+# Tips
+
+* If you want to use a different database, you can change the `database` option in the `docker-compose.yaml` file.
+* If you want to use a different Ruby version, you can change the `image` option in the `docker-compose.yaml` file and also the version in the `Gemfile`.
+* If you want to use a different Rails version, you can change the version in the `Gemfile`.
 
 ## Files
 

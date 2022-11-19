@@ -42,3 +42,6 @@ $ docker-compose run web rake db:migrate
 
 * .dockerignore: Defines the files to be ignored when building the container.
 
+# Contributing
+
+Bug reports and pull requests are welcome on GitHub at

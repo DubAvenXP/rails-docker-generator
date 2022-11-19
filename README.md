@@ -33,7 +33,7 @@ Add permissions to the directory
 $ sudo chown -R username:username .
 ```
 
-# Tips
+## Tips
 
 * If you want to use a different database, you can change the `database` option in the `docker-compose.yaml` file.
 * If you want to use a different Ruby version, you can change the `image` option in the `docker-compose.yaml` file and also the version in the `Gemfile`.
@@ -53,6 +53,6 @@ $ sudo chown -R username:username .
 
 * .dockerignore: Defines the files to be ignored when building the container.
 
-# Contributing
+## Contributing
 
 Bug reports and pull requests are welcome on GitHub at

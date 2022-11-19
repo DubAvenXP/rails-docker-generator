@@ -28,6 +28,11 @@ $ docker-compose run web rake db:create
 $ docker-compose run web rake db:migrate
 ```
 
+Add permissions to the directory
+```bash
+$ sudo chown -R username:username .
+```
+
 # Tips
 
 * If you want to use a different database, you can change the `database` option in the `docker-compose.yaml` file.

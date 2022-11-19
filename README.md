@@ -55,4 +55,4 @@ $ sudo chown -R username:username .
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at
+Bug reports and pull requests are welcome

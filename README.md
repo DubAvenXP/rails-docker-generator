@@ -9,7 +9,7 @@ You need to have Docker installed on your machine.
 ## Usage
 
 ```bash
-$ docker-compose run --no-deps web rails new . --force --database=postgresql
+$ docker-compose run --no-deps web rails new . --force --database=postgresql --api
 ```
 
 ```bash
@@ -30,7 +30,9 @@ $ docker-compose run web rake db:migrate
 
 Add permissions to the directory
 ```bash
-$ sudo chown -R username:username .
+$ sudo chown -R $(whoami):$(id -gn) .
+
+
 ```
 
 ## Tips

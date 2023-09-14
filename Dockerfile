@@ -1,15 +1,15 @@
-FROM ruby:3.0.4
-
-# Register Yarn package source.
-RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
-RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
-
-RUN apt-get update -qq && apt-get install -y nodejs yarn postgresql-client
-
-COPY Gemfile .
-COPY Gemfile.lock .
+FROM ruby:3.2.2
 
 WORKDIR /app
+
+RUN apt-get update -yqq \
+    && apt-get install -yqq --no-install-recommends \
+      nodejs \
+      xfonts-base \
+      xfonts-75dpi \
+    && rm -rf /tmp/*
+
+COPY Gemfile* .
 
 # COPY ./app /app
 RUN gem install bundler

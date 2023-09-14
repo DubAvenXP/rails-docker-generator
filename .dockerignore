@@ -1,6 +1,6 @@
-.git 
+.git
 node_modules
-/db/postgres_dadta
+/db/postgres_data
 .dockerignore
 docker-compose.yml
 Dockerfile
